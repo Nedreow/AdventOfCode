@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using AdventOfCodeConsole.Missions;
+using AdventOfCodeConsole.Utilities;
 
 namespace AdventOfCodeConsole // Note: actual namespace depends on the project name.
 {

@@ -1,8 +1,8 @@
 using System;
-using AdventOfCodeConsole.Missions;
+using AdventOfCodeConsole.Utilities;
 using NUnit.Framework;
 
-namespace AdventOfCodeTest.MissionTests;
+namespace AdventOfCodeTest.UtilityTests;
 
 public class InputUtilityTests
 {

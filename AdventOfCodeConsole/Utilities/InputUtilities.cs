@@ -1,4 +1,4 @@
-namespace AdventOfCodeConsole.Missions;
+namespace AdventOfCodeConsole.Utilities;
 
 public class InputUtilities
 {

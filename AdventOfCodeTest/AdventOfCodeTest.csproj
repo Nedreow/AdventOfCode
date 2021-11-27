@@ -18,4 +18,8 @@
       <ProjectReference Include="..\AdventOfCodeConsole\AdventOfCodeConsole.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="MissionTests" />
+    </ItemGroup>
+
 </Project>
