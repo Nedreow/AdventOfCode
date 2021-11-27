@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using AdventOfCodeConsole.Utilities;
 using NUnit.Framework;
 
@@ -19,8 +20,16 @@ public class InputUtilityTests
     [TestCase("word word", new [] {"word", "word"})]
     [TestCase("word\nword", new [] {"word", "word"})]
     [TestCase("word\nword word", new [] {"word", "word", "word"})]
+    [TestCase("word\n word  word", new [] {"word", "word", "word"})]
     public void ConvertStringOfWordsToStringList(string input, string[] expected)
     {
         Assert.AreEqual(expected, InputUtilities.ConvertInputToStringList(input));
+    }
+
+    [Test]
+    public void ReadFileToStringThrowsExceptionWhenNoFileIsFound()
+    {
+        Assert.Throws<FileNotFoundException>(
+            () => InputUtilities.ReadFileToString(Path.Combine(TestContext.CurrentContext.TestDirectory, @"TestData\noSuch.txt")));
     }
 }
