@@ -4,7 +4,7 @@ public class InputUtilities
 {
     public static string[] ConvertInputToStringList(string input)
     {
-        return input.Split(null).ToArray();
+        return input.Split(null);
     }
     
     public static int[] ConvertInputToIntList(string input)
