@@ -27,9 +27,9 @@ public class InputUtilityTests
     }
 
     [Test]
-    public void ReadFileToStringThrowsExceptionWhenNoFileIsFound()
+    public void GetInputThrowsExceptionWhenNoFileIsFound()
     {
         Assert.Throws<FileNotFoundException>(
-            () => InputUtilities.ReadFileToString(Path.Combine(TestContext.CurrentContext.TestDirectory, @"TestData\noSuch.txt")));
+            () => InputUtilities.GetInput("2000", "3_4"));
     }
 }
