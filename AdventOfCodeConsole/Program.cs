@@ -1,4 +1,4 @@
-﻿using AdventOfCodeConsole.Tasks._2020;
+﻿using AdventOfCodeConsole.Tasks;
 
 namespace AdventOfCodeConsole // Note: actual namespace depends on the project name.
 {
@@ -6,7 +6,20 @@ namespace AdventOfCodeConsole // Note: actual namespace depends on the project n
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(Day1.SolveTask1());
+            Advent2021 tasks = new Advent2021();
+            
+            tasks.SolveTasks();
+
+            foreach (var solution in tasks.SolutionList.Solutions)
+            {
+                if (solution.Value != null)
+                {
+                    Console.WriteLine($"The Solution to task {solution.Key} is: {solution.Value}");
+                }
+            }
+            
+            Console.WriteLine("");
+            Console.WriteLine("A total of " + tasks.SolutionList.SolvedCount + "/40 tasks have been completed");
         }
     }
 }
