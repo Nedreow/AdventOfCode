@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using AdventOfCodeConsole.Missions._2020;
-using AdventOfCodeConsole.Utilities;
+﻿using AdventOfCodeConsole.Tasks._2020;
 
 namespace AdventOfCodeConsole // Note: actual namespace depends on the project name.
 {
@@ -10,7 +6,7 @@ namespace AdventOfCodeConsole // Note: actual namespace depends on the project n
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(Day1.SolveMission1());
+            Console.WriteLine(Day1.SolveTask1());
         }
     }
 }

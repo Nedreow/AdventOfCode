@@ -2,7 +2,7 @@ using System.IO;
 
 namespace AdventOfCodeConsole.Utilities;
 
-public class InputUtilities
+public static class InputUtilities
 { 
     public static string[] ConvertInputToStringList(string input)
     {

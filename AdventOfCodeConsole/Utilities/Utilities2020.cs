@@ -1,6 +1,6 @@
 namespace AdventOfCodeConsole.Utilities;
 
-public class Utilities2020
+public static class Utilities2020
 {
     public static int[] InvertIntList(int[] list, int invertFrom)
     {
