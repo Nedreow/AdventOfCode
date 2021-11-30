@@ -52,6 +52,16 @@ public abstract class Advent
         _solutionList.AddSolution("19_2", SolveTask19_2());
         _solutionList.AddSolution("20_1", SolveTask20_1());
         _solutionList.AddSolution("20_2", SolveTask20_2());
+        _solutionList.AddSolution("20_1", SolveTask21_1());
+        _solutionList.AddSolution("20_2", SolveTask21_2());
+        _solutionList.AddSolution("20_1", SolveTask22_1());
+        _solutionList.AddSolution("20_2", SolveTask22_2());
+        _solutionList.AddSolution("20_1", SolveTask23_1());
+        _solutionList.AddSolution("20_2", SolveTask23_2());
+        _solutionList.AddSolution("20_1", SolveTask24_1());
+        _solutionList.AddSolution("20_2", SolveTask24_2());
+        _solutionList.AddSolution("20_1", SolveTask25_1());
+        _solutionList.AddSolution("20_2", SolveTask25_2());
     }
     
     public virtual string? SolveTask1_1()
@@ -250,6 +260,56 @@ public abstract class Advent
     }
     
     public virtual string? SolveTask20_2()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask21_1()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask21_2()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask22_1()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask22_2()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask23_1()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask23_2()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask24_1()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask24_2()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask25_1()
+    {
+        return null;
+    }
+    
+    public virtual string? SolveTask25_2()
     {
         return null;
     }
