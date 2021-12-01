@@ -52,16 +52,16 @@ public abstract class Advent
         _solutionList.AddSolution("19_2", SolveTask19_2());
         _solutionList.AddSolution("20_1", SolveTask20_1());
         _solutionList.AddSolution("20_2", SolveTask20_2());
-        _solutionList.AddSolution("20_1", SolveTask21_1());
-        _solutionList.AddSolution("20_2", SolveTask21_2());
-        _solutionList.AddSolution("20_1", SolveTask22_1());
-        _solutionList.AddSolution("20_2", SolveTask22_2());
-        _solutionList.AddSolution("20_1", SolveTask23_1());
-        _solutionList.AddSolution("20_2", SolveTask23_2());
-        _solutionList.AddSolution("20_1", SolveTask24_1());
-        _solutionList.AddSolution("20_2", SolveTask24_2());
-        _solutionList.AddSolution("20_1", SolveTask25_1());
-        _solutionList.AddSolution("20_2", SolveTask25_2());
+        _solutionList.AddSolution("21_1", SolveTask21_1());
+        _solutionList.AddSolution("21_2", SolveTask21_2());
+        _solutionList.AddSolution("22_1", SolveTask22_1());
+        _solutionList.AddSolution("22_2", SolveTask22_2());
+        _solutionList.AddSolution("23_1", SolveTask23_1());
+        _solutionList.AddSolution("23_2", SolveTask23_2());
+        _solutionList.AddSolution("24_1", SolveTask24_1());
+        _solutionList.AddSolution("24_2", SolveTask24_2());
+        _solutionList.AddSolution("25_1", SolveTask25_1());
+        _solutionList.AddSolution("25_2", SolveTask25_2());
     }
     
     public virtual string? SolveTask1_1()
