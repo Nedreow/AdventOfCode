@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using AdventOfCodeConsole.Utilities;
 using NUnit.Framework;
 
@@ -17,7 +19,7 @@ public class Utilities2021Tests
 
     [Test]
     [TestCase(
-        new[] { 199, 200, 208, 210, 200, 207, 240, 269, 260, 263 }, 
+        new [] { 199, 200, 208, 210, 200, 207, 240, 269, 260, 263 }, 
         3, 
         new[] { 607, 618, 618, 617, 647, 716, 769, 792 }
         )]
@@ -28,7 +30,7 @@ public class Utilities2021Tests
         )]
     public void TestSumSlices(int[] intArray, int sliceSize, int[] expected)
     {
-        int[] summedSlices = Utilities2021.sumSlices(intArray, sliceSize);
+        List<int> summedSlices = Utilities2021.SumSlices(intArray, sliceSize);
         
         Assert.AreEqual(expected, summedSlices);
     }

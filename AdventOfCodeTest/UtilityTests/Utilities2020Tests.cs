@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using AdventOfCodeConsole.Utilities;
 using NUnit.Framework;
 
@@ -10,7 +11,7 @@ public class Utilities2020Tests
     [TestCase(new[] { 16, 7, 12, 36 }, 40, new[] { 24, 33, 28, 4 })]
     public void TestInvertIntList(int[] intList, int max, int[] expected)
     {
-        int[] invert = Utilities2020.InvertIntList(intList, max);
+        IEnumerable<int> invert = Utilities2020.InvertIntList(intList, max);
         
         Assert.AreEqual(expected, invert);
     }

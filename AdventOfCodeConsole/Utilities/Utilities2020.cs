@@ -2,12 +2,12 @@ namespace AdventOfCodeConsole.Utilities;
 
 public static class Utilities2020
 {
-    public static int[] InvertIntList(int[] list, int invertFrom)
+    public static IEnumerable<int> InvertIntList(IEnumerable<int> list, int invertFrom)
     {
-        return list.Select(x => invertFrom - x).ToArray();
+        return list.Select(x => invertFrom - x);
     }
 
-    public static int FindCommonValue(int[] array1, int[] array2)
+    public static int FindCommonValue(IEnumerable<int> array1, IEnumerable<int> array2)
     {
         return array1.Intersect(array2).First();
     }

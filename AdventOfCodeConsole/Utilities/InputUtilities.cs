@@ -4,12 +4,12 @@ namespace AdventOfCodeConsole.Utilities;
 
 public static class InputUtilities
 { 
-    public static string[] ConvertInputToStringList(string input)
+    public static IEnumerable<string> ConvertInputToStringList(string input)
     {
         return input.Split(Array.Empty<char>(), StringSplitOptions.RemoveEmptyEntries);
     }
     
-    public static int[] ConvertInputToIntList(string input)
+    public static IEnumerable<int> ConvertInputToIntList(string input)
     {
         return ConvertInputToStringList(input).Select(int.Parse).ToArray();
     }

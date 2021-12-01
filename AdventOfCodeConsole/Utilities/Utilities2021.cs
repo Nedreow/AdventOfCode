@@ -2,12 +2,14 @@ namespace AdventOfCodeConsole.Utilities;
 
 public static class Utilities2021
 {
-    public static int CountIncreased(int[] values)
+    public static int CountIncreased(IEnumerable<int> values)
     {
+        List<int> valuesList = values.ToList();
+        
         int increasedCount = 0;
-        for (int j = 1; j < values.Length; j++)
+        for (int j = 1; j < valuesList.Count(); j++)
         {
-            if (values[j] > values[j-1])
+            if (valuesList.ElementAt(j) > valuesList.ElementAt(j-1))
             {
                 increasedCount++;
             }
@@ -16,14 +18,16 @@ public static class Utilities2021
         return increasedCount;
     }
 
-    public static int[] sumSlices(int[] values, int sliceSize)
+    public static List<int> SumSlices(IEnumerable<int> values, int sliceSize)
     {
+        List<int> valuesList = values.ToList();
+        
         var summedSlices = new List<int>();
-        for (int i = 0; i < values.Length - (sliceSize - 1); i++)
+        for (int i = 0; i < valuesList.Count() - (sliceSize - 1); i++)
         {
-            summedSlices.Add(values[i..(i+sliceSize)].Sum());
+            summedSlices.Add(valuesList.GetRange(i, sliceSize).Sum());
         }
         
-        return summedSlices.ToArray();
+        return summedSlices;
     }
 }
