@@ -1,15 +1,15 @@
 namespace AdventOfCodeConsole.Utilities._2021;
 
-public class Submarine
+public class SimpleSubmarine
 {
-    private Position _position;
+    protected Position Position;
     
-    public int Distance => _position.Distance;
-    public int Depth => _position.Depth;
+    public int Distance => Position.Distance;
+    public int Depth => Position.Depth;
 
-    public Submarine(int distance = 0, int depth = 0)
+    public SimpleSubmarine(int distance = 0, int depth = 0)
     {
-        _position = new Position(distance, depth);
+        Position = new Position(distance, depth);
     }
 
     public void Move(IEnumerable<string> moveCommands)
@@ -37,23 +37,23 @@ public class Submarine
         }
     }
 
-    private void MoveForward(int distance)
+    protected virtual void MoveForward(int distance)
     {
-        _position.Distance += distance;
+        Position.Distance += distance;
     }
 
-    private void MoveBackward(int distance)
+    protected virtual void MoveBackward(int distance)
     {
-        _position.Distance -= distance;
+        Position.Distance -= distance;
     }
 
-    private void MoveDownward(int distance)
+    protected virtual void MoveDownward(int distance)
     {
-        _position.Depth += distance;
+        Position.Depth += distance;
     }
 
-    private void MoveUpward(int distance)
+    protected virtual void MoveUpward(int distance)
     {
-        _position.Depth -= distance;
+        Position.Depth -= distance;
     }
 }

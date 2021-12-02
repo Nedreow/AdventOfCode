@@ -4,7 +4,7 @@ public static class InputUtilities
 { 
     public static IEnumerable<string> ConvertInputToStringList(string input)
     {
-        return input.Split(Array.Empty<char>(), StringSplitOptions.RemoveEmptyEntries);
+        return input.Split('\n', StringSplitOptions.RemoveEmptyEntries).Select(s => s.Trim());
     }
     
     public static IEnumerable<int> ConvertInputToIntList(string input)
