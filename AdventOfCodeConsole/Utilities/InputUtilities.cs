@@ -1,5 +1,3 @@
-using System.IO;
-
 namespace AdventOfCodeConsole.Utilities;
 
 public static class InputUtilities
