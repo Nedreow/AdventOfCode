@@ -1,3 +1,4 @@
+using System.Collections;
 using AdventOfCodeConsole.Utilities;
 using AdventOfCodeConsole.Utilities._2021;
 
@@ -39,5 +40,30 @@ public class Advent2021 : Advent
         sub.Move(input);
 
         return (sub.Distance * sub.Depth).ToString();
+    }
+
+    public override string? SolveTask3_1()
+    {
+        List<string> input = InputUtilities.ConvertInputToStringList(InputUtilities.GetInput("2021", "3_1")).ToList();
+        BitArray gamma = new BitArray(input.First().Length);
+        BitArray epsilon = new BitArray(input.First().Length);
+        
+        List<string> columnStrings = Utilities2021.StringListRowToColumn(input);
+        // ToNumeral places the most significant bit last, while the input puts it first
+        columnStrings.Reverse();
+
+        for (int i = 0; i < columnStrings.Count; i++)
+        {
+            int oneCount = Utilities2021.CountChar(columnStrings[i], '1');
+
+            if (oneCount > columnStrings[i].Length / 2)
+            {
+                gamma[i] = true;
+            } else {
+                epsilon[i] = true;
+            }
+        }
+        
+        return (gamma.ToNumeral() * epsilon.ToNumeral()).ToString();
     }
 }
