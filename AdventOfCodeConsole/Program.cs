@@ -6,7 +6,7 @@ namespace AdventOfCodeConsole // Note: actual namespace depends on the project n
     {
         public static void Main(string[] args)
         {
-            Advent2021 tasks = new Advent2021();
+            Advent2022 tasks = new Advent2022();
             
             tasks.SolveTasks();
 
