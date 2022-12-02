@@ -10,7 +10,6 @@ D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\t
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\AdventOfCodeTest.deps.json
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\AdventOfCodeTest.runtimeconfig.json
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\AdventOfCodeTest.dll
-D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\ref\AdventOfCodeTest.dll
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\AdventOfCodeTest.pdb
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll
@@ -103,3 +102,4 @@ D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\A
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\AdventOfCodeConsole.exe
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\AdventOfCodeConsole.dll
 D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\bin\Debug\net6.0\AdventOfCodeConsole.pdb
+D:\Projects\Coding\AdventOfCode\AdventOfCode\AdventOfCodeTest\obj\Debug\net6.0\refint\AdventOfCodeTest.dll

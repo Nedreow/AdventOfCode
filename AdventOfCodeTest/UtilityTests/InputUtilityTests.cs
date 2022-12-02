@@ -8,11 +8,13 @@ namespace AdventOfCodeTest.UtilityTests;
 public class InputUtilityTests
 {
     [Test]
-    [TestCase("1\n2", new [] {1, 2})]
-    [TestCase("14\n82\n76", new [] {14, 82, 76})]
-    public void ConvertStringOfNumbersToIntList(String input, int[] expected)
+    [TestCase("1\n2", true, new [] {1, 2})]
+    [TestCase("14\n82\n76", true, new [] {14, 82, 76})]
+    [TestCase("14\n\n82\n76", false, new [] {14, 0, 82, 76})]
+    public void ConvertStringOfNumbersToIntList(String input, bool omitEmpty, int[] expected)
     {
-        Assert.AreEqual(expected, InputUtilities.ConvertInputToIntList(input));
+        var convertedInput = InputUtilities.ConvertInputToIntList(input, omitEmpty);
+        Assert.AreEqual(expected, convertedInput);
     }
 
     [Test]
