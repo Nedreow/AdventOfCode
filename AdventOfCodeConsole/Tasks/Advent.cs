@@ -14,7 +14,7 @@ public abstract class Advent
     {
         _solutionList.AddSolution("1_1", SolveTask1_1());
         _solutionList.AddSolution("1_2", SolveTask1_2());
-        _solutionList.AddSolution("2_1", SolveTask2_1());
+        _solutionList.AddSolution("2_1.txt", SolveTask2_1());
         _solutionList.AddSolution("2_2", SolveTask2_2());
         _solutionList.AddSolution("3_1", SolveTask3_1());
         _solutionList.AddSolution("3_2", SolveTask3_2());

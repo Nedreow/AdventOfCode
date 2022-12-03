@@ -24,7 +24,7 @@ public class Advent2021 : Advent
 
     public override string? SolveTask2_1()
     {
-        IEnumerable<string> input = InputUtilities.ConvertInputToStringList(InputUtilities.GetInput("2021", "2_1"));
+        IEnumerable<string> input = InputUtilities.ConvertInputToStringList(InputUtilities.GetInput("2021", "2_1.txt"));
         SimpleSubmarine sub = new SimpleSubmarine();
         
         sub.Move(input);
@@ -34,7 +34,7 @@ public class Advent2021 : Advent
 
     public override string? SolveTask2_2()
     {
-        IEnumerable<string> input = InputUtilities.ConvertInputToStringList(InputUtilities.GetInput("2021", "2_1"));
+        IEnumerable<string> input = InputUtilities.ConvertInputToStringList(InputUtilities.GetInput("2021", "2_1.txt"));
         AimedSubmarine sub = new AimedSubmarine();
         
         sub.Move(input);
